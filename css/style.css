@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap');
+
+:root {  /*Define variáveis*/
+    --main-color: #be9c79;
+    --black: #333;
+    --white: #fff;
+    --light-color: #666;
+    --border: 0.2rem solid var(var(--black));
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+*::selection {
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+html {
+    font-size: 62.5%; /*10px do windows*/
+    overflow-x: hidden;
+}
+
+section {
+    padding: 3rem 2rem; /*rem: tamanho da fonte lá na raiz*/
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}
+
+.heading img {
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+
+.heading h3 {
+    font-size: 4rem;
+    color: var(--black);
+    font-family: 'Merienda One', cursive;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: var(--main-color);
+    color: var(--white);
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--black);
+}
+
+.header {
+    background-color: var(--main-color);
+    box-shadow: var(--box-shadow);
+    position: sticky; /* Faz o menu fica grudado */
+    top: 0; 
+    left: 0;
+    right: 0;
+}
+
+.header .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1.5rem 2rem;
+}
+
+.header .flex .logo img {
+    height: 4.5rem;
+}
+
+.header .flex .navbar a {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+
+.header .flex .navbar a:hover {
+    text-decoration: underline;
+}
+
+#menu-btn {
+    font-size: 2.5rem;
+    color: var(--black);
+    cursor: pointer;
+    display: none;
+}
+
+/*HOME*/ 
+.home-bg {
+    background: linear-gradient(90deg, #be9c79, transparent 70%), url('../images/home-bg.jpg'); /*Mistura dois tipos de background*/
+    background-position: center;
+    background-size: cover;
+}
+
+.home-bg .home {
+    min-width: 70rem;
+    display: flex;
+    align-items: center;
+}
+
+.home-bg .home .content {
+    text-align: center;
+    width: 50rem;
+}
+
+.home-bg .home .content h3 {
+    font-size: 6rem;
+    color: var(--black);
+    font-family: 'Merienda One', cursive;
+}
+
+.home-bg .home .content p {
+    font-size: 1.8rem;
+    color: var(--light-color);
+    padding: 1rem 0 ;
+}
+
+/*ABOUT*/
+
+.about {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2rem;
+}
