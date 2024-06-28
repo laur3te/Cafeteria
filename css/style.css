@@ -139,5 +139,31 @@ section {
 .about {
     display: grid;
     grid-template-columns: 50% 50%;
-    gap: 2rem;
+    gap: 1rem;
+}
+
+.about .image img {
+    width: 100%;
+}
+
+.about .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about .image h3 {
+    font-family: 'Merienda One', cursive;
+    font-size: 4.5 rem;
+    color: var(--black);
+    padding-bottom: 1rem;
+}
+
+.about .content p {
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+    line-height: 1.5;
+    
+
 }
